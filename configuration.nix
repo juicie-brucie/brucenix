@@ -63,9 +63,9 @@
    users.users.bruce = {
      isNormalUser = true;
      extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-     packages = with pkgs; [
-       tree
-     ];
+     #packages = with pkgs; [
+       #tree
+     #];
    };
 
    programs.firefox.enable = true;
