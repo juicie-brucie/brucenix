@@ -15,7 +15,6 @@
 	  # safe.directory = "/home/bruce/.dotfiles";
 	   }; #extraConfig
 
-#bruce adds test change
 
   }; #programs.git
 
