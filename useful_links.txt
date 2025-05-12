@@ -10,8 +10,23 @@ useful commands:
 --show-trace --print-build-logs --verbose &> log.file
 nix flake show templates
 nix flake init -t templates#"template_name (ex templates#full)"
+Nix Language:
+Nix expressions are translated into nix instintiate which produces the nix/store derivation and the nix/store builds the package from that derivation. this derivation creates the hash seen in the nix/store file
+
+Nix Language examples:
+package builder:
+    {stdenv, fetchurl, perl}:
+    stdenv.mkDerivation {
+        name = "hello-2.1.1"
+        builder = ./builder.sh
+        src = fetchurl {
+            url = https://somegithub/user/repo/hello-2.1.1.tar.gz;
+            md5 = "some_hash";
+        }; #src
+        inherit perl;
 
 
+    } #stdenv
 
 
 future projects:

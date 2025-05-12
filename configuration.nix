@@ -63,9 +63,9 @@
    users.users.bruce = {
      isNormalUser = true;
      extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-  #   packages = with pkgs; [
-  #     tree
-  #   ];
+     packages = with pkgs; [
+       tree
+     ];
    };
 
    programs.firefox.enable = true;
@@ -79,6 +79,7 @@
      vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
      wget
      curl
+     emacs
      git
      nettools
      rustdesk
