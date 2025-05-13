@@ -82,6 +82,7 @@
      nettools
      neofetch
      rustdesk
+     tree
      paraview
      pciutils
      vim
