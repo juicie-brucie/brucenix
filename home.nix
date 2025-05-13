@@ -1,7 +1,13 @@
 { config, pkgs, ... }:
 
 {
-  # Home Manager needs a bit of information about you and the paths it should
+
+ imports = [
+    ./shell/sh.nix
+
+ ]; #imports
+
+ # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "bruce";
   home.homeDirectory = "/home/bruce";
@@ -86,11 +92,7 @@
     # EDITOR = "emacs";
   };
 
-   programs.bash.enable = true;
-   programs.bash.shellAliases = {
-	ll = "ls -l";
-	".." = "cd ..";
-	};
+
 
 
   # Let Home Manager install and manage itself.
