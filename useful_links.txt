@@ -13,6 +13,9 @@ nix flake init -t templates#"template_name (ex templates#full)"
 Nix Language:
 Nix expressions are translated into nix instintiate which produces the nix/store derivation and the nix/store builds the package from that derivation. this derivation creates the hash seen in the nix/store file
 
+
+fucking home-manger doesn't use sudo for the rebuild because its for user files
+
 Nix Language examples:
 package builder:
     {stdenv, fetchurl, perl}:
