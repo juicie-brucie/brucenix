@@ -80,6 +80,7 @@
      git
      kitty
      nettools
+     neofetch
      rustdesk
      paraview
      pciutils
