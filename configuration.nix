@@ -68,6 +68,9 @@
      #];
    };
 
+   users.users.bruce.shell = pkgs.zsh;
+   programs.zsh.enable = true;
+
    programs.firefox.enable = true;
 
     nixpkgs.config.allowUnfree = true;

@@ -4,6 +4,7 @@
 
  imports = [
     ./shell/sh.nix
+    ./app/terminal/alacritty.nix
 
  ]; #imports
 
